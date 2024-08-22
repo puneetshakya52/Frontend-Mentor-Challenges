@@ -1,0 +1,144 @@
+.demo {
+  font-family: "Outfit", Roboto;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(330, 100%, 98%);
+}
+h1,
+h2 {
+  font-family: "Young Serif", sans-serif;
+}
+h1 {
+  color: hsl(24, 5%, 18%);
+}
+h3 {
+  font-family: "Outfit", sans-serif;
+  color: hsl(332, 51%, 32%);
+}
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+ul,
+ol {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+}
+hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-top: 1px solid hsl(30, 54%, 90%);
+  width: 650px;
+}
+
+/* generic table styling  */
+
+table {
+  font-family: "Outfit", sans-serif;
+  /* border: 1px solid blue; */
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+tr:last-child {
+  border-bottom: none;
+}
+td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+td:first-child {
+  color: hsl(30, 10%, 34%);
+  padding-left: 30px;
+  padding-right: 240px;
+}
+td:nth-child(2) {
+  padding-right: 250px;
+}
+
+/* styling for main body  */
+.main-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  height: 1580px;
+  background-color: white;
+  /* border: 1px solid brown; */
+  border-radius: 16px;
+  padding: 24px;
+}
+.image-wrapper {
+  width: 650px;
+  height: 300px;
+  /* border: 1px solid black; */
+}
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+}
+
+/* Styling for preptime wrapper div  */
+
+.preptime-wrapper {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+  padding: 18px;
+}
+.preptime-wrapper ul {
+  padding-left: 24px;
+}
+.preptime-wrapper ul > li {
+  margin-bottom: 16px;
+  padding-left: 18px;
+}
+.preptime-wrapper h3 {
+  margin-top: 0;
+}
+
+/* Styling for ingredient list wrapper  */
+
+.ingredient-list-wrapper h2 {
+  margin-bottom: 0px;
+  color: hsl(14, 45%, 36%);
+}
+.ingredient-list-wrapper ul {
+  padding-left: 18px;
+}
+.ingredient-list-wrapper ul > li {
+  margin-bottom: 16px;
+  padding-left: 18px;
+}
+
+/* Styling for instruction container  */
+
+.instruction-wrapper h2 {
+  margin-bottom: 0;
+  margin-top: 16px;
+  color: hsl(14, 45%, 36%);
+}
+.instruction-wrapper ol {
+  padding-left: 18px;
+}
+.instruction-wrapper ol > li {
+  margin-bottom: 16px;
+  padding-left: 18px;
+}
+
+/* Styling for nutrition wrapper  */
+.nutrition-wrapper h2 {
+  margin-bottom: 0;
+  color: hsl(14, 45%, 36%);
+}
+.nutri-value {
+  color: hsl(332, 51%, 32%);
+  font-weight: bolder;
+}
