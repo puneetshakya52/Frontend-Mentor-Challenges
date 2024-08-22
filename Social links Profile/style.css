@@ -1,0 +1,94 @@
+/* Generic CSS  */
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 8%);
+}
+h2,
+p {
+  font-family: "Inter", sans-serif;
+}
+h2 {
+  margin-top: 32px;
+  margin-bottom: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Main container CSS */
+
+.main-container {
+  width: 400px;
+  height: 600px;
+  padding: 32px;
+  margin-top: 16px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile image */
+
+.image-wrapper {
+  width: 100px;
+  height: 100px;
+}
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 64px;
+}
+
+/* Personal name, location and hobby */
+
+.person-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location {
+  color: hsl(75, 94%, 57%);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.bio {
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
+/* Social media links button */
+
+.socialmedia-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.socialmedia-links button {
+  width: 336px;
+  margin-bottom: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+/* button animation states */
+
+.socialmedia-links button:hover {
+  cursor: pointer;
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+  transition: 0.35s;
+}
