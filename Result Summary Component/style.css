@@ -23,3 +23,233 @@
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f2f5;
+}
+p,
+h1,
+h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+h1 {
+  margin-bottom: 0;
+}
+b {
+  color: var(--dark-gray-blue);
+  font-weight: 800;
+}
+.your-result {
+  color: var(--light-lavender);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 32px;
+}
+.score {
+  font-size: 56px;
+  margin-top: 12px;
+  color: var(--white);
+}
+.divisor {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: -4px;
+  color: var(--light-lavender);
+}
+.great {
+  color: var(--white);
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+.remarks {
+  font-size: 14px;
+  text-align: center;
+  width: 205px;
+  color: var(--light-lavender);
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 400px;
+  background-color: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.overall-score-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  border-radius: 24px;
+}
+.main-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    var(--violet-blue),
+    var(--persian-blue)
+  );
+}
+
+/* left side of the card  */
+
+.summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  /* background-color: var(--pale-blue); */
+}
+.summary {
+  margin-top: 32px;
+  margin-left: 32px;
+  font-size: 18px;
+  color: var(--dark-gray-blue);
+  font-weight: 800;
+}
+.characterstic-wrapper1 {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border-radius: 8px;
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+
+/* characterstic 1 styling from here  */
+
+.characterstic-wrapper1 img {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.key-parameter {
+  margin-right: 64px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.reaction {
+  color: var(--light-red);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* characterstic 2 styling from here  */
+
+.characterstic-wrapper2 {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  margin-top: 12px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border-radius: 8px;
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+.characterstic-wrapper2 img {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.memory {
+  color: var(--orangey-yellow);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* characterstic 3 styling from here  */
+
+.characterstic-wrapper3 {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  margin-top: 12px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border-radius: 8px;
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+.characterstic-wrapper3 img {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.verbal {
+  color: var(--green-teal);
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 76px;
+}
+
+/* characterstic 4 styling from here  */
+
+.characterstic-wrapper4 {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  margin-top: 12px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border-radius: 8px;
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+.characterstic-wrapper4 img {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.visual {
+  color: var(--cobal-blue);
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 76px;
+}
+.key-score {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(135, 135, 135);
+}
+
+/* button styling goes here  */
+
+.continue-button {
+  width: 240px;
+  height: 40px;
+  margin-top: 32px;
+  margin-left: 32px;
+  border-radius: 20px;
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.continue-button:hover {
+  background: linear-gradient(
+    180deg,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
