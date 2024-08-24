@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- google fonts link  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Result Summary Component</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-wrapper">
-        <div class="overall-score-wrapper">
-            <p>Your Result</p>
-            <h1>79</h1>
-            <p>of 100</p>
-            <h2>Great</h2>
-            <p>You scored higher than 65% of the people who have taken these tests.</p>
+      <div class="overall-score-wrapper">
+        <p class="your-result">Your Result</p>
+        <div class="main-score">
+          <h1 class="score">76</h1>
+          <p class="divisor">of 100</p>
         </div>
-        <div class="summary-wrapper">
-            <p>Summary</p>
-            <div class="characterstic wrapper">
-                <img src="images/icon-reaction.svg" alt="Reaction icon">
-                <p>Reaction</p>
-                <p><b>80</b>/100</p>
-            </div>
+        <h2 class="great">Great</h2>
+        <p class="remarks">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+
+      <div class="summary-wrapper">
+        <p class="summary">Summary</p>
+
+        <!-- first parameter  -->
+
+        <div class="characterstic-wrapper1">
+          <img src="images/icon-reaction.svg" alt="Reaction icon" />
+          <p class="key-parameter reaction">Reaction</p>
+          <p class="key-score"><b>80 &nbsp;</b>/&nbsp;100</p>
         </div>
 
-        <button>Continue</button>
+        <!-- second parameter  -->
+        <div class="characterstic-wrapper2">
+          <img src="images/icon-memory.svg" alt="Memory icon" />
+          <p class="key-parameter memory">Memory</p>
+          <p class="key-score"><b>92 &nbsp;</b>/&nbsp;100</p>
+        </div>
+
+        <!-- thiird parameter  -->
+        <div class="characterstic-wrapper3">
+          <img src="images/icon-verbal.svg" alt="Verbal icon" />
+          <p class="key-parameter verbal">Verbal</p>
+          <p class="key-score"><b>61 &nbsp;</b>/&nbsp;100</p>
+        </div>
+
+        <!-- fourth parameter  -->
+        <div class="characterstic-wrapper4">
+          <img src="images/icon-visual.svg" alt="Visual icon" />
+          <p class="key-parameter visual">Visual</p>
+          <p class="key-score"><b>72 &nbsp;</b>/&nbsp;100</p>
+        </div>
+        <button class="continue-button">Continue</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
