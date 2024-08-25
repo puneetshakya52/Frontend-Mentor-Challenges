@@ -1,0 +1,107 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 450px;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.product-img {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.product-desc {
+  padding: 32px;
+}
+.perfume {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 6px;
+  font-size: 12px;
+  color: var(--dark-grayish-blue);
+}
+h1 {
+  font-family: "Fraunces", serif;
+  margin-top: 16px;
+  font-size: 32px;
+  width: 200px;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  color: var(--very-dark-blue);
+}
+.product-bio {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+  width: 240px;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+.price-container {
+  display: flex;
+  justify-content: space-between; /* Adjust this as needed */
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.price {
+  display: inline;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: var(--dark-cyan);
+  font-weight: 700;
+}
+.discounted-amount {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  font-size: 12px;
+  margin-right: 55px;
+}
+.add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-cyan);
+  columns: var(--white);
+  width: 220px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+.add-to-cart .icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.add-to-cart:hover {
+  background-color: var(--very-dark-blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
