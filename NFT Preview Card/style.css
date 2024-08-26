@@ -1,0 +1,151 @@
+/* setting up google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* setting up variables */
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--main-bg);
+  font-family: "Outfit", sans-serif;
+}
+h1 {
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+hr {
+  border-top: 1px solid var(--line);
+  opacity: 0.2;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 300px;
+  height: 500px;
+  background-color: var(--card-bg);
+  border-radius: 14px;
+  padding: 1.25em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    /* Slight shadow for depth */ 0 6px 20px rgba(0, 0, 0, 0.1); /* Larger shadow for a soft effect */
+}
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+.overlay-svg {
+  position: absolute; /* Position the SVG absolutely within the container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  visibility: hidden;
+}
+.svg-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 14px;
+  opacity: 0.4;
+  background-color: var(--cyan);
+  visibility: hidden;
+}
+.nft-desc {
+  display: flex;
+  flex-direction: column;
+}
+.eth-desc {
+  color: var(--soft-blue);
+  margin-bottom: 2em;
+  font-size: 1rem;
+}
+.eth {
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-right: 4em;
+}
+.eth-icon {
+  margin-left: -1em;
+}
+.eth-timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.2em;
+}
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+.days-left {
+  color: var(--soft-blue);
+  font-size: 0.8rem;
+  margin-left: 0.3em;
+}
+.author {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.avatar {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--white);
+  border-radius: 14px;
+  margin-right: 0.75em;
+}
+.name {
+  color: var(--white);
+  font-size: 0.85rem;
+}
+.svg-bg {
+  background-color: var(--cyan);
+}
+
+/* hover states  */
+
+h1:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+.name:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+.img-wrapper:hover .overlay-svg,
+.img-wrapper:hover .svg-bg {
+  cursor: pointer;
+  visibility: visible;
+}
