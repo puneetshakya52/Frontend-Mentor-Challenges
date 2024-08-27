@@ -1,0 +1,106 @@
+/* font importing  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+/* variables  */
+:root {
+  --very-dark-blue: #090b1a;
+  --dark-desaturate-blue: #1b1938;
+  --soft-violet: #aa5cdb;
+  --white: #ffffff;
+  --main-para: #ffffffbf;
+  --stat-heading: #ffffff99;
+
+  --inter-font: "Inter", sans-serif;
+  --lexend-font: "Lexend Deca", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+}
+.main-wrapper {
+  display: flex;
+  justify-items: center;
+  width: 900px;
+  height: 400px;
+  background-color: var(--dark-desaturate-blue);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.insight-wrapper {
+  display: flex;
+  width: 450px;
+  height: 100%;
+  flex-direction: column;
+  padding: 4em;
+}
+.main-heading {
+  color: var(--white);
+  font-size: 2rem;
+  font-family: var(--inter-font);
+  font-weight: var(--fw-700);
+}
+.insight {
+  color: var(--soft-violet);
+}
+.para-desc {
+  color: var(--stat-heading);
+  font-family: var(--inter-font);
+  font-size: 0.8rem;
+  line-height: 1.75;
+  margin-top: 1.5em;
+}
+.detailed-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 1.5em;
+}
+.individual-stat {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+.numeric-data {
+  font-family: var(--inter-font);
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: var(--fw-700);
+}
+.numeric-context {
+  font-family: var(--lexend-font);
+  color: var(--stat-heading);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  margin-top: 0.3em;
+  letter-spacing: 0.1em;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 450px;
+  height: 100%;
+}
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px 8px 8px 0px;
+}
+.purple-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(170, 92, 219, 0.5);
+  border-radius: 8px;
+}
