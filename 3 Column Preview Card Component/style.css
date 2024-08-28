@@ -1,0 +1,143 @@
+/* Importing Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+/* setting up fonts and color  */
+
+:root {
+  --bright-orange: #e38826;
+  --dark-cyan: #006970;
+  --very-dark-cyan: #004241;
+
+  --transparent-white-para: #ffffffbf;
+  --very-light-gray-bg-hd-btn: #f2f2f2;
+
+  --font-lexend-deca: "Lexend Deca", sans-serif;
+  --font-big-shoulders-display: "Big Shoulders Display", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--very-light-gray-bg-hd-btn);
+}
+
+.main-wrapper {
+  width: 744px;
+  height: 350px;
+  display: flex;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.car-category {
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+  height: 100%;
+  padding: 2em;
+}
+.car-category img {
+  width: 56px;
+  margin-bottom: 1.5em;
+}
+.sedan {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.suv {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.car-type {
+  font-family: var(--font-big-shoulders-display);
+  color: var(--very-light-gray-bg-hd-btn);
+  font-weight: var(--fw-700);
+  font-size: 1.75rem;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.car-desc {
+  font-family: var(--font-lexend-deca);
+  color: var(--transparent-white-para);
+  font-size: 0.75rem;
+  font-weight: var(--fw-400);
+  width: 165px;
+  line-height: 1.5em;
+  margin-bottom: 3.5em;
+}
+.car-btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 60px;
+  border: none;
+  background-color: var(--very-light-gray-bg-hd-btn);
+  font-family: var(--font-lexend-deca);
+  font-weight: var(--fw-400);
+  font-size: 0.7rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.btn-clr1 {
+  color: var(--bright-orange);
+}
+.btn-clr2 {
+  color: var(--dark-cyan);
+}
+.btn-clr3 {
+  color: var(--very-dark-cyan);
+}
+
+/* hover states  */
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--very-light-gray-bg-hd-btn);
+  color: var(--very-light-gray-bg-hd-btn);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* For screens with a maximum width of 480px ( typical mobile screen size) */
+
+@media only screen and (max-width: 480px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-wrapper {
+    width: 318px;
+    height: 630px;
+    flex-direction: column;
+    margin-top: 0.5em;
+  }
+  .car-category {
+    width: 100%;
+  }
+  .sedan {
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+  }
+  .luxury {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+}
