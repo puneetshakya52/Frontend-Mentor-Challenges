@@ -1,0 +1,115 @@
+/* fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* variables  */
+:root {
+  --dark-cyan: #19a2ae;
+  --very-dark-desaturated-blue: #2d3248;
+  --dark-grayish-blue: #6a6f81;
+
+  --white: #ffffff;
+
+  --font-kumbhsans: "Kumbh Sans", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font-kumbhsans);
+  background-color: var(--dark-cyan);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+}
+
+hr {
+  border-top: 1px solid var(--dark-grayish-blue);
+  opacity: 0.2;
+  width: 100%;
+}
+.main-wrapper {
+  width: 350px;
+  height: 385px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.image-wrapper {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.image-wrapper img:first-child {
+  border-radius: 12px 12px 0 0;
+  background-image: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-wrapper img:last-child {
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+}
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+.name {
+  font-weight: var(--fw-700);
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1rem;
+  margin-top: 1.2em;
+}
+.age {
+  font-weight: var(--fw-400);
+  color: var(--dark-grayish-blue);
+  margin-left: 0.25em;
+}
+.location {
+  font-weight: var(--fw-400);
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+  margin-top: -1em;
+}
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5em;
+}
+.sub-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-stats p:first-child {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: var(--fw-700);
+  font-size: 1rem;
+  margin-bottom: 0.2em;
+}
+.sub-stats p:last-child {
+  color: var(--dark-grayish-blue);
+  font-weight: var(--fw-400);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+}
