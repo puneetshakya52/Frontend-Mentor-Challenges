@@ -1,0 +1,161 @@
+/* Google font linking  */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* setting up the colors  */
+:root {
+  --cyan: #2ab2af;
+  --desaturated-cyan: #4abebd;
+  --bright-yellow: #c0df34;
+  --light-gray: #e5eff5;
+  --grayish-blue: #98a6bd;
+  --white: #fff;
+
+  --font-karla: "Karla", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--grayish-blue);
+  font-family: var(--font-karla);
+}
+.main-wrapper {
+  max-width: 90%;
+  min-height: 100%;
+  background-color: var(--white);
+  height: auto;
+  /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.join-our-community {
+  width: 100%;
+  height: auto;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.join-our-community p:nth-child(1) {
+  color: var(--cyan);
+  font-weight: var(--fw-700);
+  margin-bottom: 1.2em;
+}
+.join-our-community p:nth-child(2) {
+  color: var(--bright-yellow);
+  font-weight: var(--fw-700);
+  font-size: 0.9em;
+  width: 80%;
+  margin-bottom: 1em;
+}
+.join-our-community p:last-child {
+  color: var(--grayish-blue);
+  font-weight: var(--fw-400);
+  font-size: 0.8em;
+  width: 85%;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+}
+.monthly-subscription {
+  width: 100%;
+  height: auto;
+  background-color: var(--cyan);
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em;
+}
+.monthly-subscription p:nth-child(1) {
+  color: var(--white);
+  font-weight: var(--fw-700);
+  margin-bottom: 1.2em;
+}
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-bottom: 0.25em;
+}
+.pricing p:first-child {
+  color: var(--white);
+  font-size: 1.75rem;
+  font-weight: var(--fw-700);
+  margin-bottom: 0;
+}
+.pricing p:last-child {
+  color: var(--light-gray);
+  font-weight: var(--fw-400);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.monthly-subscription p:nth-child(3) {
+  color: var(--light-gray);
+  font-weight: var(--fw-400);
+  font-size: 0.9rem;
+  margin-bottom: 2em;
+}
+.signup-btn {
+  min-width: 70%;
+  height: 48px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--bright-yellow);
+  color: var(--white);
+  font-weight: var(--fw-700);
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+.why-us {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em;
+  background-color: var(--desaturated-cyan);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.why-us p:first-child {
+  color: var(--white);
+  font-weight: var(--fw-700);
+  margin-bottom: 1.2em;
+}
+.why-us p:last-child {
+  color: var(--light-gray);
+  font-weight: var(--fw-400);
+  font-size: 0.9rem;
+  width: 90%;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+}
+
+/* hover state  */
+.signup-btn:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* media queries  */
+
+@media screen and (min-width: 750px) {
+  .second-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .monthly-subscription {
+    max-width: 50%;
+    border-bottom-left-radius: 8px;
+  }
+  .why-us {
+    max-width: 50%;
+    border-bottom-left-radius: 0px;
+  }
+}
