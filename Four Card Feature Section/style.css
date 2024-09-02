@@ -1,0 +1,107 @@
+/* google fonts linkin  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* variables  */
+:root {
+  --red: #ea5353;
+  --cyan: #45d3d3;
+  --orange: #fcaf4a;
+  --blue: #549ef2;
+  --very-dark-blue: #4c4e61;
+  --grayish-blue: #a3a5ae;
+  --very-light-gray: #fafafa;
+
+  --poppins: "Poppins", sans-serif;
+  --fs: 1.5rem;
+
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--very-light-gray);
+  font-family: var(--poppins);
+}
+.main-wrapper {
+  width: 90%;
+  /* border: 2px solid salmon; */
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  margin-top: 2em;
+}
+.hero-heading {
+  color: var(--very-dark-blue);
+  font-size: var(--fs);
+  font-weight: var(--fw-200);
+  text-align: center;
+  width: 100%;
+}
+.hero-heading span {
+  font-weight: var(--fw-600);
+}
+.hero-desc {
+  text-align: center;
+  color: var(--grayish-blue);
+  font-size: 0.9rem;
+  font-weight: var(--fw-400);
+  line-height: 1.5;
+  width: 32ch;
+  margin-top: 1em;
+  margin-bottom: 3.5em;
+}
+.feature {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid maroon; */
+  padding: 1.2em;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 #fff;
+  margin-bottom: 1.2em;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.cyan-top {
+  border-top: 4px solid var(--cyan);
+}
+.red-top {
+  border-top: 4px solid var(--red);
+}
+.orange-top {
+  border-top: 4px solid var(--orange);
+}
+.blue-top {
+  border-top: 4px solid var(--blue);
+}
+
+.card-header-styling {
+  color: var(--very-dark-blue);
+  font-size: 1;
+  font-weight: var(--fw-600);
+}
+.card-body-styling {
+  color: var(--grayish-blue);
+  font-size: 0.8rem;
+  font-weight: var(--fw-400);
+  line-height: 1.5;
+  margin-top: 0.8em;
+  margin-bottom: 2em;
+}
+
+.hero-icon {
+  display: flex;
+  justify-content: flex-end;
+  /* border: 2px solid violet; */
+}
+.hero-icon img {
+  width: 48px;
+}
