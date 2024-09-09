@@ -107,13 +107,18 @@ body {
   gap: 2.5em;
 }
 .individual-feature {
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.2em;
   /* border: 2px solid darkolivegreen; */
 }
-
+.wrapper {
+  width: 100%;
+  flex-direction: column;
+  /* border: 2px solid darkviolet; */
+}
 /* section 3 styling goes here  */
 
 .section3 {
@@ -138,6 +143,7 @@ body {
   /* border: 2px solid darkred; */
 }
 .workflow-wrapper {
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -150,6 +156,7 @@ body {
   align-items: center;
   gap: 1.5em;
   margin-top: 4em;
+  /* border: 2px solid maroon; */
 }
 .tips img {
   width: 48px;
@@ -214,4 +221,71 @@ body {
 button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* media queries for desktop goes here  */
+
+@media (width > 769px) {
+  body {
+    background-image: url(images/bg-header-desktop.png);
+  }
+  .left-text {
+    text-align: left;
+  }
+  .hero-title {
+    width: 100%;
+  }
+  .hero-desc {
+    width: 100%;
+  }
+  .btn-wrapper {
+    flex-direction: row;
+  }
+  .btn-layout {
+    width: 250px;
+    font-size: 1rem;
+  }
+  .section3 img {
+    width: 50%;
+  }
+  .features {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .features img {
+    transform: scale(0.7);
+  }
+  .wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-top: 100px;
+  }
+  .workflow-wrapper {
+    width: 100%;
+    flex-direction: row;
+  }
+  .tips {
+    width: 100%;
+  }
+
+  .brand-partners {
+    flex-direction: row;
+  }
+  .section7 {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2.5em 0;
+  }
+  .page-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .brand-logo {
+    margin-top: 0;
+  }
+  .social-links {
+    margin-bottom: 0;
+  }
 }
